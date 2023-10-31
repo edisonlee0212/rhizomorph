@@ -1,0 +1,4 @@
+m_precisionLevel: 2
+m_noises2D:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AgAAAArXIz0AAIA/PQpXPwAAIMEAACBBAAAAAA=="

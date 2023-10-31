@@ -1,0 +1,11 @@
+m_treeDescriptor:
+  m_assetHandle: 14785347609176408924
+  m_assetTypeName: TreeDescriptor
+m_treeGrowthSettings:
+  m_flowNodeLimit: 10
+  m_autoBalance: true
+  m_collectLight: true
+  m_collectWater: false
+  m_collectNitrite: false
+  m_enableRootCollisionDetection: false
+  m_enableBranchCollisionDetection: false

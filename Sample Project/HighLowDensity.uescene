@@ -1,0 +1,61 @@
+m_environmentSettings:
+  m_backgroundColor: [1, 1, 1]
+  m_environmentGamma: 2.20000005
+  m_ambientLightIntensity: 0.800000012
+  m_environmentType: 0
+  m_environmentSettings:
+    m_assetHandle: 139
+    m_assetTypeName: EnvironmentalMap
+m_mainCamera:
+  m_entityHandle: 0
+  m_privateComponentTypeName: ""
+m_entityMetadataList:
+  - m_name: HighLowDensitySoil
+    m_handle: 11607632492189045630
+    m_enabled: true
+    m_static: false
+    Root.Handle: 11607632492189045630
+    m_privateComponentElements:
+      - m_typeName: Soil
+        m_enabled: true
+        m_soilDescriptor:
+          m_assetHandle: 875837234311054793
+          m_assetTypeName: SoilDescriptor
+  - m_name: Climate
+    m_handle: 3306031421695125966
+    m_enabled: true
+    m_static: false
+    Root.Handle: 3306031421695125966
+    m_privateComponentElements:
+      - m_typeName: Climate
+        m_enabled: true
+        m_climateDescriptor:
+          m_assetHandle: 13551659426509046730
+          m_assetTypeName: ClimateDescriptor
+m_systems:
+  []
+m_dataComponentStorages:
+  - m_entitySize: 129
+    m_chunkCapacity: 127
+    m_entityAliveCount: 2
+    m_dataComponentTypes:
+      - m_name: Transform
+        m_size: 64
+        m_offset: 0
+      - m_name: GlobalTransform
+        m_size: 64
+        m_offset: 64
+      - m_name: GlobalTransformUpdateFlag
+        m_size: 1
+        m_offset: 128
+    m_chunkArray:
+      - m_handle: 11607632492189045630
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 3306031421695125966
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AA=="

@@ -1,0 +1,18 @@
+m_capacity:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAAAAAA=="
+m_permeability:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAAAAAA=="
+m_density:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAAAAAA=="
+m_initialNutrients:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAAAAAA=="
+m_initialWater:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAAAAAA=="
+m_thickness:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAMB5RA=="

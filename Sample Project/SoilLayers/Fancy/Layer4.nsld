@@ -1,0 +1,33 @@
+m_capacity:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAAAAAA=="
+m_permeability:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAAAAAA=="
+m_density:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAAAAAA=="
+m_initialNutrients:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAAAAAA=="
+m_initialWater:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAAAAAA=="
+m_thickness:
+  m_minMax: [-1000, 1000]
+  m_noiseDescriptors: !!binary "AAAAAM3MzD0AAIA/AACAPwAAIMEAACBBAACAPwIAAADNzMw9AACAPwAAAD8AACDBAAAgQQAAAAA="
+m_albedoTexture:
+  m_assetHandle: 690684478923109263
+  m_assetTypeName: Texture2D
+m_roughnessTexture:
+  m_assetHandle: 12446969160212697922
+  m_assetTypeName: Texture2D
+m_metallicTexture:
+  m_assetHandle: 0
+  m_assetTypeName: ""
+m_normalTexture:
+  m_assetHandle: 2455047530887078189
+  m_assetTypeName: Texture2D
+m_heightTexture:
+  m_assetHandle: 16396287480436989084
+  m_assetTypeName: Texture2D

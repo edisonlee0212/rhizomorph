@@ -1,0 +1,22 @@
+m_heightField:
+  m_assetHandle: 3329091230986395429
+  m_assetTypeName: HeightField
+m_soilParameters:
+  m_voxelResolution: [64, 48, 64]
+  m_deltaX: 0.200000003
+  m_deltaTime: 0.00100000005
+  m_boundingBoxMin: [-6.4000001, -6.4000001, -6.4000001]
+  m_boundary_x: 3
+  m_boundary_y: 3
+  m_boundary_z: 3
+  m_diffusionForce: 1
+  m_gravityForce: [0, -1, 0]
+m_soilLayerDescriptors:
+  - m_assetHandle: 11820005615227777702
+    m_assetTypeName: NoiseSoilLayerDescriptor
+  - m_assetHandle: 1955566811995235707
+    m_assetTypeName: NoiseSoilLayerDescriptor
+  - m_assetHandle: 9353624597515408315
+    m_assetTypeName: NoiseSoilLayerDescriptor
+  - m_assetHandle: 6615277193620577792
+    m_assetTypeName: NoiseSoilLayerDescriptor

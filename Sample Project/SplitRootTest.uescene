@@ -1,0 +1,138 @@
+m_environmentSettings:
+  m_backgroundColor: [1, 1, 1]
+  m_environmentGamma: 2.20000005
+  m_ambientLightIntensity: 1
+  m_environmentType: 0
+  m_environmentSettings:
+    m_assetHandle: 138
+    m_assetTypeName: EnvironmentalMap
+m_mainCamera:
+  m_entityHandle: 14269078021690778122
+  m_privateComponentTypeName: Camera
+m_entityMetadataList:
+  - m_name: Main Camera
+    m_handle: 14269078021690778122
+    m_enabled: true
+    m_static: false
+    Root.Handle: 14269078021690778122
+    m_privateComponentElements:
+      - m_typeName: Camera
+        m_enabled: true
+        m_resolutionX: 1
+        m_resolutionY: 1
+        m_useClearColor: false
+        m_clearColor: [0.5, 0.5, 0.5]
+        m_allowAutoResize: true
+        m_nearDistance: 0.100000001
+        m_farDistance: 500
+        m_fov: 120
+        m_skybox:
+          m_assetHandle: 136
+          m_assetTypeName: Cubemap
+      - m_typeName: PostProcessing
+        m_enabled: true
+  - m_name: Soil
+    m_handle: 13698140944162944987
+    m_enabled: true
+    m_static: false
+    Root.Handle: 13698140944162944987
+    m_privateComponentElements:
+      - m_typeName: Soil
+        m_enabled: true
+        m_soilDescriptor:
+          m_assetHandle: 5735590270891644293
+          m_assetTypeName: SoilDescriptor
+  - m_name: Climate
+    m_handle: 7139874365380680548
+    m_enabled: true
+    m_static: false
+    Root.Handle: 7139874365380680548
+    m_privateComponentElements:
+      - m_typeName: Climate
+        m_enabled: true
+        m_climateDescriptor:
+          m_assetHandle: 13551659426509046730
+          m_assetTypeName: ClimateDescriptor
+  - m_name: Complex1
+    m_handle: 2567738223410672228
+    m_enabled: true
+    m_static: false
+    Root.Handle: 2567738223410672228
+    m_privateComponentElements:
+      - m_typeName: Tree
+        m_enabled: true
+        m_treeDescriptor:
+          m_assetHandle: 13707125545887990744
+          m_assetTypeName: TreeDescriptor
+  - m_name: Complex1
+    m_handle: 1589091300174483488
+    m_enabled: true
+    m_static: false
+    Root.Handle: 1589091300174483488
+    m_privateComponentElements:
+      - m_typeName: Tree
+        m_enabled: true
+        m_treeDescriptor:
+          m_assetHandle: 13707125545887990744
+          m_assetTypeName: TreeDescriptor
+  - m_name: Complex1
+    m_handle: 1869280306563648935
+    m_enabled: true
+    m_static: false
+    Root.Handle: 1869280306563648935
+    m_privateComponentElements:
+      - m_typeName: Tree
+        m_enabled: true
+        m_treeDescriptor:
+          m_assetHandle: 13707125545887990744
+          m_assetTypeName: TreeDescriptor
+m_systems:
+  - m_typeName: PhysicsSystem
+    m_enabled: true
+    m_rank: 1
+    m_handle: 8088735338795842972
+m_dataComponentStorages:
+  - m_entitySize: 129
+    m_chunkCapacity: 127
+    m_entityAliveCount: 6
+    m_dataComponentTypes:
+      - m_name: Transform
+        m_size: 64
+        m_offset: 0
+      - m_name: GlobalTransform
+        m_size: 64
+        m_offset: 64
+      - m_name: GlobalTransformUpdateFlag
+        m_size: 1
+        m_offset: 128
+    m_chunkArray:
+      - m_handle: 14269078021690778122
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAADqRnc/74OEPgAAAAAAAAAA74OEvupGdz8AAAAAAAAAAAAAAEAAAAxCAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAADqRnc/74OEPgAAAAAAAAAA74OEvupGdz8AAAAAAAAAAAAAAEAAAAxCAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 13698140944162944987
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 7139874365380680548
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 1869280306563648935
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAQc3MTL0AAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAQc3MTL0AAAAAAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 2567738223410672228
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAwc3MTL0AAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAwc3MTL0AAAAAAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 1589091300174483488
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAM3MTL0AAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAM3MTL0AAAAAAACAPw=="
+          - Data: !!binary "AA=="

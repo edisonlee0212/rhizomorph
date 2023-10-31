@@ -1,0 +1,124 @@
+m_environmentSettings:
+  m_backgroundColor: [1, 1, 1]
+  m_environmentGamma: 2.20000005
+  m_ambientLightIntensity: 0.800000012
+  m_environmentType: 1
+  m_environmentSettings:
+    m_assetHandle: 139
+    m_assetTypeName: EnvironmentalMap
+m_mainCamera:
+  m_entityHandle: 16697515107393744338
+  m_privateComponentTypeName: Camera
+m_entityMetadataList:
+  - m_name: Climate
+    m_handle: 11206655276189216929
+    m_enabled: true
+    m_static: false
+    Root.Handle: 11206655276189216929
+    m_privateComponentElements:
+      - m_typeName: Climate
+        m_enabled: true
+        m_climateDescriptor:
+          m_assetHandle: 13551659426509046730
+          m_assetTypeName: ClimateDescriptor
+  - m_name: Butter
+    m_handle: 14054410527756307872
+    m_enabled: true
+    m_static: false
+    Root.Handle: 14054410527756307872
+    m_privateComponentElements:
+      - m_typeName: Tree
+        m_enabled: true
+        m_treeDescriptor:
+          m_assetHandle: 15166332224363503045
+          m_assetTypeName: TreeDescriptor
+  - m_name: Soil
+    m_handle: 3488210168798569806
+    m_enabled: true
+    m_static: false
+    Root.Handle: 3488210168798569806
+    m_privateComponentElements:
+      - m_typeName: Soil
+        m_enabled: true
+        m_soilDescriptor:
+          m_assetHandle: 5308329970401651725
+          m_assetTypeName: SoilDescriptor
+  - m_name: Camera
+    m_handle: 16697515107393744338
+    m_enabled: true
+    m_static: false
+    Root.Handle: 16697515107393744338
+    m_privateComponentElements:
+      - m_typeName: Camera
+        m_enabled: true
+        m_resolutionX: 1
+        m_resolutionY: 1
+        m_useClearColor: true
+        m_clearColor: [1, 1, 1]
+        m_nearDistance: 0.100000001
+        m_farDistance: 500
+        m_fov: 120
+        m_backgroundIntensity: 1
+        m_skybox:
+          m_assetHandle: 142
+          m_assetTypeName: Cubemap
+      - m_typeName: PostProcessing
+        m_enabled: true
+  - m_name: DirectionalLight
+    m_handle: 10697433217710220438
+    m_enabled: true
+    m_static: false
+    Root.Handle: 10697433217710220438
+    m_privateComponentElements:
+      - m_typeName: DirectionalLight
+        m_enabled: true
+        m_castShadow: true
+        m_bias: 0.377000004
+        m_diffuse: [1, 1, 1]
+        m_diffuseBrightness: 1
+        m_lightSize: 0.920000017
+        m_normalOffset: 0
+      - m_typeName: TreePointCloud
+        m_enabled: true
+m_systems:
+  []
+m_dataComponentStorages:
+  - m_entitySize: 129
+    m_chunkCapacity: 127
+    m_entityAliveCount: 5
+    m_dataComponentTypes:
+      - m_name: Transform
+        m_size: 64
+        m_offset: 0
+      - m_name: GlobalTransform
+        m_size: 64
+        m_offset: 64
+      - m_name: GlobalTransformUpdateFlag
+        m_size: 1
+        m_offset: 128
+    m_chunkArray:
+      - m_handle: 3488210168798569806
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 11206655276189216929
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 16697515107393744338
+        DataComponents:
+          - Data: !!binary "IuVlPwAAALK3P+E+AAAAAFj2PD4aZGg/J9zAvgAAAADRecy+ccLWPoyxUD8AAAAAauXVvyDvCUBox0NAAACAPw=="
+          - Data: !!binary "IuVlPwAAALK3P+E+AAAAAFj2PD4aZGg/J9zAvgAAAADRecy+ccLWPoyxUD8AAAAAauXVvyDvCUBox0NAAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 10697433217710220438
+        DataComponents:
+          - Data: !!binary "AACAP13+XzMAAAAAAAAAAFr+X7P9/38/AAAAAAAAAAAAAAAAAAAAAPv/fz8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AACAP13+XzMAAAAAAAAAAFr+X7P9/38/AAAAAAAAAAAAAAAAAAAAAPv/fz8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 14054410527756307872
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAM3MTL0AAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAM3MTL0AAAAAAACAPw=="
+          - Data: !!binary "AA=="

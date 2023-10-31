@@ -1,0 +1,74 @@
+m_environmentSettings:
+  m_backgroundColor: [1, 1, 1]
+  m_environmentGamma: 2.20000005
+  m_ambientLightIntensity: 0.800000012
+  m_environmentType: 0
+  m_environmentSettings:
+    m_assetHandle: 139
+    m_assetTypeName: EnvironmentalMap
+m_mainCamera:
+  m_entityHandle: 9428018042133441161
+  m_privateComponentTypeName: Camera
+m_entityMetadataList:
+  - m_name: Main Camera
+    m_handle: 9428018042133441161
+    m_enabled: true
+    m_static: false
+    Root.Handle: 9428018042133441161
+    m_privateComponentElements:
+      - m_typeName: Camera
+        m_enabled: true
+        m_resolutionX: 1
+        m_resolutionY: 1
+        m_useClearColor: true
+        m_clearColor: [0.5, 0.5, 0.5]
+        m_allowAutoResize: true
+        m_nearDistance: 0.100000001
+        m_farDistance: 500
+        m_fov: 120
+        m_skybox:
+          m_assetHandle: 137
+          m_assetTypeName: Cubemap
+      - m_typeName: PostProcessing
+        m_enabled: true
+  - m_name: SD_1
+    m_handle: 17538588118979691716
+    m_enabled: true
+    m_static: false
+    Root.Handle: 17538588118979691716
+    m_privateComponentElements:
+      - m_typeName: Soil
+        m_enabled: true
+        m_soilDescriptor:
+          m_assetHandle: 4270176916063016580
+          m_assetTypeName: SoilDescriptor
+m_systems:
+  - m_typeName: PhysicsSystem
+    m_enabled: true
+    m_rank: 1
+    m_handle: 6837195985392015702
+m_dataComponentStorages:
+  - m_entitySize: 129
+    m_chunkCapacity: 127
+    m_entityAliveCount: 2
+    m_dataComponentTypes:
+      - m_name: Transform
+        m_size: 64
+        m_offset: 0
+      - m_name: GlobalTransform
+        m_size: 64
+        m_offset: 64
+      - m_name: GlobalTransformUpdateFlag
+        m_size: 1
+        m_offset: 128
+    m_chunkArray:
+      - m_handle: 9428018042133441161
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAADqRnc/74OEPgAAAAAAAAAA74OEvupGdz8AAAAAAAAAAAAAAEAAAAxCAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAADqRnc/74OEPgAAAAAAAAAA74OEvupGdz8AAAAAAAAAAAAAAEAAAAxCAACAPw=="
+          - Data: !!binary "AA=="
+      - m_handle: 17538588118979691716
+        DataComponents:
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AACAPwAAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPw=="
+          - Data: !!binary "AA=="
