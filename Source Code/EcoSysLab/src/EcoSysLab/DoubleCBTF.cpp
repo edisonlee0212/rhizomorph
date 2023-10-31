@@ -9,8 +9,10 @@ using namespace RayTracerFacility;
 #endif
 using namespace EcoSysLab;
 void DoubleCBTF::OnInspect() {
+#ifdef RAYTRACERFACILITY
   Editor::DragAndDropButton<CompressedBTF>(m_top, "Top");
   Editor::DragAndDropButton<CompressedBTF>(m_bottom, "Bottom");
+#endif
 }
 void DoubleCBTF::CollectAssetRef(std::vector<AssetRef> &list) {
   list.push_back(m_top);

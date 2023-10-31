@@ -1,8 +1,9 @@
 #ifdef RAYTRACERFACILITY
 #include "BTFMeshRenderer.hpp"
+#include "CompressedBTF.hpp"
 #endif
 #include "CBTFGroup.hpp"
-#include "CompressedBTF.hpp"
+
 #include "DefaultResources.hpp"
 #include "DoubleCBTF.hpp"
 #include "IVolume.hpp"
@@ -302,64 +303,68 @@ void SorghumData::ApplyGeometry() {
     }
 #endif
     {
-      vertexCount = 0;
-      vertices.clear();
-      triangles.clear();
-      scene->ForEachChild(owner, [&](Entity child) {
-        if (scene->HasDataComponent<LeafTag>(child)) {
-          auto leafData =
-              scene->GetOrSetPrivateComponent<LeafData>(child).lock();
-          vertices.insert(vertices.end(),
-                          leafData->m_bottomFaceVertices.begin(),
-                          leafData->m_bottomFaceVertices.end());
-          for (const auto &triangle : leafData->m_bottomFaceTriangles) {
-            triangles.emplace_back(triangle.x + vertexCount,
-                                   triangle.y + vertexCount,
-                                   triangle.z + vertexCount);
-          }
-          vertexCount = vertices.size();
-        }
-      });
-      auto leavesBottomGeometryEntity =
-          scene->CreateEntity(sorghumLayer->m_leafBottomFaceGeometryArchetype,
-                              "Leaves Bottom Face Geometry");
-      scene->SetParent(leavesBottomGeometryEntity, owner);
-      auto leafBottomFaceMeshRenderer =
-          scene
-              ->GetOrSetPrivateComponent<MeshRenderer>(
-                  leavesBottomGeometryEntity)
-              .lock();
-      if (!vertices.empty()) {
-        leafBottomFaceMeshRenderer->m_mesh =
-            ProjectManager::CreateTemporaryAsset<Mesh>();
-        leafBottomFaceMeshRenderer->m_mesh.Get<Mesh>()->SetVertices(
-            17, vertices, triangles);
-      } else {
-        leafBottomFaceMeshRenderer->m_mesh.Clear();
-      }
-      leafBottomFaceMeshRenderer->m_material =
-          sorghumLayer->m_leafBottomFaceMaterial;
-#ifdef RAYTRACERFACILITY
-      if (btfAvailable) {
-        auto leafBottomFaceBtfMeshRenderer =
+        vertexCount = 0;
+        vertices.clear();
+        triangles.clear();
+        scene->ForEachChild(owner, [&](Entity child) {
+            if (scene->HasDataComponent<LeafTag>(child)) {
+                auto leafData =
+                    scene->GetOrSetPrivateComponent<LeafData>(child).lock();
+                vertices.insert(vertices.end(),
+                    leafData->m_bottomFaceVertices.begin(),
+                    leafData->m_bottomFaceVertices.end());
+                for (const auto& triangle : leafData->m_bottomFaceTriangles) {
+                    triangles.emplace_back(triangle.x + vertexCount,
+                        triangle.y + vertexCount,
+                        triangle.z + vertexCount);
+                }
+                vertexCount = vertices.size();
+            }
+            });
+        auto leavesBottomGeometryEntity =
+            scene->CreateEntity(sorghumLayer->m_leafBottomFaceGeometryArchetype,
+                "Leaves Bottom Face Geometry");
+        scene->SetParent(leavesBottomGeometryEntity, owner);
+        auto leafBottomFaceMeshRenderer =
             scene
+            ->GetOrSetPrivateComponent<MeshRenderer>(
+                leavesBottomGeometryEntity)
+            .lock();
+        if (!vertices.empty()) {
+            leafBottomFaceMeshRenderer->m_mesh =
+                ProjectManager::CreateTemporaryAsset<Mesh>();
+            leafBottomFaceMeshRenderer->m_mesh.Get<Mesh>()->SetVertices(
+                17, vertices, triangles);
+        }
+        else {
+            leafBottomFaceMeshRenderer->m_mesh.Clear();
+        }
+        leafBottomFaceMeshRenderer->m_material =
+            sorghumLayer->m_leafBottomFaceMaterial;
+#ifdef RAYTRACERFACILITY
+        if (btfAvailable) {
+            auto leafBottomFaceBtfMeshRenderer =
+                scene
                 ->GetOrSetPrivateComponent<BTFMeshRenderer>(
                     leavesBottomGeometryEntity)
                 .lock();
-        leafBottomFaceBtfMeshRenderer->m_mesh =
-            leafBottomFaceMeshRenderer->m_mesh;
-        leafBottomFaceBtfMeshRenderer->m_btf = doubleCBTF->m_bottom;
-        if (bottomFace) {
-          leafBottomFaceMeshRenderer->SetEnabled(
-              !sorghumLayer->m_enableCompressedBTF);
-          leafBottomFaceBtfMeshRenderer->SetEnabled(
-              sorghumLayer->m_enableCompressedBTF);
-        } else {
-          leafBottomFaceMeshRenderer->SetEnabled(false);
-          leafBottomFaceBtfMeshRenderer->SetEnabled(false);
-#endif
+            leafBottomFaceBtfMeshRenderer->m_mesh =
+                leafBottomFaceMeshRenderer->m_mesh;
+            leafBottomFaceBtfMeshRenderer->m_btf = doubleCBTF->m_bottom;
+            if (bottomFace) {
+                leafBottomFaceMeshRenderer->SetEnabled(
+                    !sorghumLayer->m_enableCompressedBTF);
+                leafBottomFaceBtfMeshRenderer->SetEnabled(
+                    sorghumLayer->m_enableCompressedBTF);
+            }
+            else {
+                leafBottomFaceMeshRenderer->SetEnabled(false);
+                leafBottomFaceBtfMeshRenderer->SetEnabled(false);
+			}
         }
-      }
+#endif
+        
+      
     }
 
   } else {
@@ -516,9 +521,10 @@ void SorghumData::ApplyGeometry() {
             } else {
               leafBottomFaceMeshRenderer->SetEnabled(false);
               leafBottomFaceBtfMeshRenderer->SetEnabled(false);
+        }
+      }
 #endif
-            }
-          }
+            
         }
       } else if (scene->HasDataComponent<PanicleTag>(child)) {
         auto panicleData =

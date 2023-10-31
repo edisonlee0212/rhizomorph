@@ -76,11 +76,12 @@ int main() {
 
     auto consoleLayer = Application::GetLayer<ConsoleLayer>();
     consoleLayer->m_showConsoleWindow = true;
-
+#ifdef RAYTRACERFACILITY
     auto rayTracerLayer = Application::GetLayer<RayTracerLayer>();
     rayTracerLayer->m_showCameraWindow = false;
     rayTracerLayer->m_showSceneWindow = false;
     rayTracerLayer->m_showRayTracerWindow = false;
+#endif
 #pragma region Engine Loop
     Application::Start();
 #pragma endregion
