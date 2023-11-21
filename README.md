@@ -5,7 +5,7 @@ This repository is an offical implementation of the paper [Rhizomorph: The Coord
 
 ## Build instructions:
 [! ! !]Prior to building process, please unzip the /Source Code/UniEngine/3rdParty/physx/physx.zip*.
-The project is tested under Windows 10 pro and it worked (version 22H2)
+The project is tested under Windows 10 pro (version 22H2)
 
 ### Step 1: Visual Studio:
 Please make sure you installed Visual Studio 2022 with “Desktop development with C++” selected:
