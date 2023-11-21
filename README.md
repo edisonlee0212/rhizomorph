@@ -7,7 +7,7 @@ This repository is an offical implementation of the paper [Rhizomorph: The Coord
 [! ! !]Prior to building process, please unzip the /Source Code/UniEngine/3rdParty/physx/physx.zip*.
 The project is tested under Windows 10 pro and it worked (version 22H2)
 
-### Step 1: Visual Studio
+### Step 1: Visual Studio:
 Please make sure you installed Visual Studio 2022 with “Desktop development with C++” selected:
 
 ![Pic1](/Resources/GitHub/Picture1.png?raw=true "Pic1")
@@ -32,15 +32,18 @@ EcoSysLab.exe and click start button marked with red box to start building
 ![Pic5](/Resources/GitHub/Picture5.png?raw=true "Pic5")
 
 ## Application instructions:
-### 1. Once you have the framework opened, click the “Create or load New Project” button:
+### Step 1: Welcome menu:
+Once you have the framework opened, click the “Create or load New Project” button:
 
 ![Pic6](/Resources/GitHub/Picture6.png?raw=true "Pic6")
 
-### 2. In the file dialog, select the “Project.ueproj” provided in the /SourceCode/Project folder
+### Step 2: Open sample project:
+In the file dialog, select the “Project.ueproj” provided in the /SourceCode/Project folder
 
 ![Pic7](/Resources/GitHub/Picture7.png?raw=true "Pic7")
 
-### 3. You should be able to see the project is loaded and the framework’s running. The project folder comes with a sample scene. Select EcoSysLab Layer panel and check “Auto grow” box to see the tree start growing. To move the camera in space, press and hold mouse right button and move with "W, A, S, D, Shift, Ctrl". To rotate camera, press and hold mouse right button and move the mouse.
+### Step 3: Tree growth, camera movements:
+You should be able to see the project is loaded and the framework’s running. The project folder comes with a sample scene. Select EcoSysLab Layer panel and check “Auto grow” box to see the tree start growing. To move the camera in space, press and hold mouse right button and move with "W, A, S, D, Shift, Ctrl". To rotate camera, press and hold mouse right button and move the mouse.
 
 ![Pic8](/Resources/GitHub/Picture8.png?raw=true "Pic8")
 
@@ -48,15 +51,18 @@ You should be able to see the tree with its root system:
 
 ![Pic9](/Resources/GitHub/Picture9.png?raw=true "Pic9")
 
-### 4. Click "Generate Meshes" button in EcoSysLab Layer panel and navigate to scene panel you will see the mesh for tree is generated.
+### Step 4: Generate meshes:
+Click "Generate Meshes" button in EcoSysLab Layer panel and navigate to scene panel you will see the mesh for tree is generated.
 
 ![Pic10](/Resources/GitHub/Picture10.png?raw=true "Pic10")
 
-### 5. To export mesh as OBJ, select (either from Entity Explorer panel or directly click the object in scene panel) the target entity named "Branch Mesh" as one of the children of "Butter" entity which contains the MeshRenderer that provides the rendering for branches.
+### Step 5: OBJ export:
+To export mesh as OBJ, select (either from Entity Explorer panel or directly click the object in scene panel) the target entity named "Branch Mesh" as one of the children of "Butter" entity which contains the MeshRenderer that provides the rendering for branches.
 Find the Temporary Mesh button which links to the branch mesh asset, double click it and it will show up in the Asset Inspector panel. You can then click Export as OBJ button to save branch mesh as OBJ on your disk.
 
 ![Pic11](/Resources/GitHub/Picture11.png?raw=true "Pic11")
 
-### 6. You can export branch mesh, root mesh, and foliage mesh, but not fine root mesh. The fine root mesh is not stored as triangular mesh, but curves that is expand to mesh with geometry shader within the framework on GPU. Here's a screenshot of what does exported meshes look like in MeshLab:
+### Step 6: OBJ export (Continued):
+You can export branch mesh, root mesh, and foliage mesh, but not fine root mesh. The fine root mesh is not stored as triangular mesh, but curves that is expand to mesh with geometry shader within the framework on GPU. Here's a screenshot of what does exported meshes look like in MeshLab:
 
 ![Pic12](/Resources/GitHub/Picture12.png?raw=true "Pic12")
