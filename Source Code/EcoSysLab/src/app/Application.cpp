@@ -67,7 +67,8 @@ int main() {
     // adjust default camera speed
     auto editorLayer = Application::GetLayer<EditorLayer>();
     editorLayer->m_velocity = 2.f;
-    editorLayer->m_defaultSceneCameraPosition = glm::vec3(1.124, 0.218, 14.089);
+    editorLayer->m_sceneCameraPosition = glm::vec3(0, 0.5, 7.0);
+    editorLayer->m_defaultSceneCameraPosition = glm::vec3(0, 0.5, 7.0);
     // override default scene camera position etc.
     editorLayer->m_showCameraWindow = false;
     editorLayer->m_showSceneWindow = true;
